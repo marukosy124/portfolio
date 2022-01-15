@@ -28,7 +28,7 @@ a {
   height: 20px;
   background-color: #48fff6;
   border-radius: 50px;
-  /* animation: light-blink 3s infinite; */
+  animation: light-blink 3s infinite;
   pointer-events: none;
 }
 

@@ -48,13 +48,18 @@ function expandNavbar() {
   }
 
   const navTitles = document.getElementsByClassName('nav-title');
-  console.log(navTitles.length);
   for (let i = 0; i < navTitles.length; i++) {
-    console.log(navTitles[i].className);
     if (navTitles[i].className === 'nav-title nav-title-in') {
       navTitles[i].className = 'nav-title nav-title-out';
     } else {
       navTitles[i].className = 'nav-title nav-title-in';
     }
+  }
+
+  const menuIcon = document.getElementById('menu-icon');
+  if (menuIcon.className === '') {
+    menuIcon.className = 'open';
+  } else {
+    menuIcon.className = '';
   }
 }
