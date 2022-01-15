@@ -1,3 +1,6 @@
+/*************************************************
+ * general
+ **************************************************/
 * {
   margin: 0;
   padding: 0;
@@ -18,8 +21,18 @@ a {
   text-decoration: none;
 }
 
-/* cursor */
+.container {
+  display: flex;
+}
 
+.page-container {
+  padding-top: 1rem;
+  width: 100%;
+}
+
+/*************************************************
+ * cursor
+ **************************************************/
 .light {
   position: absolute;
   top: 5%;
@@ -71,15 +84,9 @@ a {
   }
 }
 
-/* navbar */
-.container {
-  display: flex;
-}
-
-.page-container {
-  width: 100%;
-}
-
+/*************************************************
+ * navbar
+ **************************************************/
 #navbar {
   width: fit-content;
   height: 100vh;
@@ -100,11 +107,11 @@ a {
 }
 
 .navbar-default {
-  width: 4em;
+  width: 8rem !important;
 }
 
 .navbar-expand {
-  width: 13rem;
+  width: 13rem !important;
 }
 
 .menu-btn {
@@ -241,4 +248,10 @@ a {
   top: 18px;
   width: 0%;
   left: 50%;
+}
+
+/*************************************************
+ * welcome
+ **************************************************/
+section #welcome {
 }
