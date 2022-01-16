@@ -298,13 +298,13 @@ header {
 
 .welcome-title {
   width: 8ch;
-  animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+  animation: typing 2s steps(22), blink 0.5s step-end infinite alternate,
+    glow 500ms forwards;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
   font-size: 3em;
   margin: auto;
-  animation: glow 500ms forwards;
 }
 
 @keyframes typing {
