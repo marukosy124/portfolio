@@ -28,11 +28,13 @@ function applyCursorRippleEffect(e) {
   ripple.style.top = `${e.clientY}px`;
   ripple.style.animation = 'ripple-effect .4s linear';
 
-  // set light back to original class
+  // set light back to original class (need refactor later)
   ripple.onanimationend = () => {
     document.body.removeChild(ripple);
     lights[0].className = 'light';
     lights[1].className = 'light light-tail';
+    lights[2].className = 'light';
+    lights[3].className = 'light light-tail';
   };
 }
 

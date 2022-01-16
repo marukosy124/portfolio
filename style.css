@@ -260,6 +260,68 @@ header {
   display: none;
 }
 
+#page-container {
+  opacity: 1;
+  margin-left: 0;
+  transition: all 0.8s;
+}
+#page-container.open {
+  opacity: 0.5;
+  margin-left: 5rem;
+  transition: all 0.8s;
+}
+
+/*************************************************
+ * welcome
+ **************************************************/
+.welcome {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+#cube {
+  width: 700px;
+  height: 600px;
+  animation: show 2s forwards;
+  margin: auto;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.welcome-title {
+  width: 8ch;
+  animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-size: 3em;
+  margin: auto;
+  animation: glow 500ms forwards;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/*************************************************
+ * responsiveness
+ **************************************************/
 @media (max-width: 768px) {
   header {
     display: flex;
@@ -297,21 +359,8 @@ header {
   #page-container.open {
     margin-left: 13rem !important;
   }
-}
 
-#page-container {
-  opacity: 1;
-  margin-left: 0;
-  transition: all 0.8s;
-}
-#page-container.open {
-  opacity: 0.5;
-  margin-left: 5rem;
-  transition: all 0.8s;
-}
-
-/*************************************************
- * welcome
- **************************************************/
-section #welcome {
+  #cube {
+    display: none;
+  }
 }

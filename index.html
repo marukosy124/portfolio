@@ -28,7 +28,7 @@
     <div class="navbar-default" id="navbar">
       <menu-btn></menu-btn>
       <nav>
-        <a href="/">
+        <a href="#welcome">
           <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
             stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -84,13 +84,20 @@
     <!-- page content -->
     <div id="page-container">
       <section id="welcome">
-        <h1>Welcome to my portfolio website!</h1>
+        <div id="cube">
+          <div class="light"></div>
+          <div class="light light-tail"></div>
+        </div>
+        <div class="welcome-title">
+          Welcome.
+        </div>
       </section>
     </div>
 
   </div>
 
   <script src="script.js" type="text/javascript"></script>
+  <script src="components/Cube.js" type="module"></script>
   <script src="components/MenuButton.js" type="text/javascript" defer></script>
 </body>
 
