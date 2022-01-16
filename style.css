@@ -26,7 +26,6 @@ a {
 }
 
 #page-container {
-  padding-top: 1rem;
   width: 100%;
 }
 
@@ -296,15 +295,19 @@ header {
   }
 }
 
-.welcome-title {
+.welcome-text {
+  position: fixed;
+  left: 15%;
+  top: 45%;
+}
+
+.typing {
   width: 8ch;
   animation: typing 2s steps(22), blink 0.5s step-end infinite alternate,
     glow 500ms forwards;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
-  font-size: 3em;
-  margin: auto;
 }
 
 @keyframes typing {
@@ -360,7 +363,8 @@ header {
     margin-left: 13rem !important;
   }
 
-  #cube {
+  .light,
+  .light-tail {
     display: none;
   }
 }

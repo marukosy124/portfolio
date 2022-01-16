@@ -1,6 +1,9 @@
 class MenuButton extends HTMLElement {
   constructor() {
     super();
+  }
+
+  connectedCallback() {
     this.innerHTML = `
     <div class="menu-btn">
       <div class="menu-btn-inner">
