@@ -40,12 +40,14 @@ function applyCursorRippleEffect(e) {
  * navbar
  **************************************************/
 function expandNavbar() {
+  const pageContainer = document.getElementById('page-container');
   const navbar = document.getElementById('navbar');
   if (navbar.className === 'navbar-default') {
     navbar.className = 'navbar-expand';
   } else {
     navbar.className = 'navbar-default';
   }
+  pageContainer.classList.toggle('open');
 
   const navTitles = document.getElementsByClassName('nav-title');
   for (let i = 0; i < navTitles.length; i++) {
@@ -56,10 +58,11 @@ function expandNavbar() {
     }
   }
 
-  const menuIcon = document.getElementById('menu-icon');
-  if (menuIcon.className === '') {
-    menuIcon.className = 'open';
-  } else {
-    menuIcon.className = '';
+  const menuIcons = document.getElementsByClassName('menu-icon');
+  for (let i = 0; i < menuIcons.length; i++) {
+    menuIcons[i].classList.toggle('open');
   }
+
+  const navMobile = document.querySelector('nav');
+  navMobile.classList.toggle('open');
 }
