@@ -63,16 +63,13 @@ a {
 
 @keyframes light-blink {
   0% {
-    box-shadow: 0 0 20px white, 0 0 0px white, 0 0 5px white, 0 0 20px #48fff6,
-      0 0 5px #48fff6, 0 0 5px #48fff6;
+    box-shadow: 0 0 20px white, 0 0 0px white, 0 0 5px white, 0 0 20px #48fff6, 0 0 5px #48fff6, 0 0 5px #48fff6;
   }
   50% {
-    box-shadow: 0 0 3px white, 0 0 5px white, 0 0 10px white, 0 0 30px #48fff6,
-      0 0 20px #48fff6, 0 0 60px #48fff6;
+    box-shadow: 0 0 3px white, 0 0 5px white, 0 0 10px white, 0 0 30px #48fff6, 0 0 20px #48fff6, 0 0 60px #48fff6;
   }
   100% {
-    box-shadow: 0 0 20px white, 0 0 0px white, 0 0 5px white, 0 0 20px #48fff6,
-      0 0 5px #48fff6, 0 0 5px #48fff6;
+    box-shadow: 0 0 20px white, 0 0 0px white, 0 0 5px white, 0 0 20px #48fff6, 0 0 5px #48fff6, 0 0 5px #48fff6;
   }
 }
 
@@ -212,8 +209,7 @@ nav a:hover > .nav-title {
 }
 
 .menu-icon:hover span {
-  box-shadow: 0px 0px 0 #76f5ee, 0px 0px 2px #76f5ee, 0px 0px 4px #76f5ee,
-    0px 0px 8px #76f5ee;
+  box-shadow: 0px 0px 0 #76f5ee, 0px 0px 2px #76f5ee, 0px 0px 4px #76f5ee, 0px 0px 8px #76f5ee;
 }
 
 .menu-icon span:nth-child(1) {
@@ -295,16 +291,21 @@ header {
   }
 }
 
-.welcome-text {
+#welcome-text {
   position: fixed;
   left: 15%;
   top: 45%;
+  transition: all 0.8s;
+}
+
+#welcome-text.open {
+  left: 20%;
+  transition: all 0.8s;
 }
 
 .typing {
   width: 8ch;
-  animation: typing 2s steps(22), blink 0.5s step-end infinite alternate,
-    glow 500ms forwards;
+  animation: typing 2s steps(22), blink 0.5s step-end infinite alternate, glow 500ms forwards;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
@@ -321,6 +322,10 @@ header {
     border-color: transparent;
   }
 }
+
+/*************************************************
+ * about
+ **************************************************/
 
 /*************************************************
  * responsiveness

@@ -43,13 +43,16 @@ function applyCursorRippleEffect(e) {
  **************************************************/
 function expandNavbar() {
   const pageContainer = document.getElementById('page-container');
+  const welcomeText = document.getElementById('welcome-text');
   const navbar = document.getElementById('navbar');
   if (navbar.className === 'navbar-default') {
     navbar.className = 'navbar-expand';
   } else {
     navbar.className = 'navbar-default';
   }
+
   pageContainer.classList.toggle('open');
+  welcomeText.classList.toggle('open');
 
   const navTitles = document.getElementsByClassName('nav-title');
   for (let i = 0; i < navTitles.length; i++) {
