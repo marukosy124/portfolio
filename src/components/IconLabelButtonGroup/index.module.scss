@@ -1,0 +1,41 @@
+.ButtonGroup {
+  display: flex;
+
+  .flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .button {
+    cursor: pointer;
+    height: 35px;
+    width: 35px;
+    color: #333;
+    border-radius: 100px;
+    background: rgba(255, 255, 255, 0.885);
+    margin: 5px;
+    transition: 0.8s;
+
+    span {
+      width: 0px;
+      overflow: hidden;
+      transition: 1s;
+      text-align: center;
+      font-size: 12px;
+      display: none;
+    }
+
+    &:hover {
+      width: 130px;
+      border-radius: 100px;
+
+      span {
+        padding: 2px;
+        width: max-content;
+        margin-left: 5px;
+        display: block;
+      }
+    }
+  }
+}

@@ -1,0 +1,61 @@
+.AboutPage {
+  h2 {
+    color: $primary-color;
+  }
+
+  .container {
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+
+    .inner {
+      display: flex;
+      align-items: center;
+      text-align: justify;
+      justify-content: space-between;
+
+      img {
+        object-fit: cover;
+        margin: 2rem 1rem;
+      }
+
+      .intro {
+        max-width: 65%;
+        margin-right: 16px;
+      }
+    }
+  }
+
+  hr {
+    margin: 15px 0;
+    color: #333333;
+  }
+
+  .SkillTitle {
+    margin-bottom: 10px;
+  }
+
+  .SkillContainer {
+    display: flex;
+    flex-wrap: wrap;
+
+    .inner {
+      display: flex;
+      margin-right: 10px;
+    }
+  }
+
+  @media only screen and (max-width: $mobile-breakpoint) {
+    .inner {
+      flex-direction: column-reverse;
+      .intro {
+        max-width: 100% !important;
+      }
+    }
+
+    img {
+      margin: 2rem;
+      margin-bottom: 1rem;
+    }
+  }
+}

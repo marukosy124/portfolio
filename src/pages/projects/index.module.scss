@@ -1,0 +1,93 @@
+@import "@/styles/common.module.scss";
+
+.ProjectsPage {
+  padding-top: 1rem;
+
+  .Toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.5rem;
+    margin-bottom: 10px;
+
+    .filter {
+      cursor: pointer;
+      padding: 5px 10px;
+      display: inline-block;
+
+      .inner {
+        display: flex;
+        align-items: center;
+      }
+
+      &:hover {
+        @include glowFilter;
+      }
+      .button {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .Filterbar {
+    transition: all 0.8s;
+    overflow: hidden;
+
+    .container {
+      display: flex;
+      overflow-x: auto;
+    }
+
+    .title {
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      font-weight: bold;
+      margin: 10px 0;
+
+      .reset {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        svg {
+          margin-right: 5px;
+        }
+
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+
+  .grid {
+    margin: 1rem 0;
+    display: grid;
+    grid-gap: 2rem;
+    justify-content: space-around;
+    padding: initial;
+    grid-template-columns: repeat(auto-fit, minmax(400px, max-content));
+
+    @media only screen and (max-width: 500px) {
+      grid-template-columns: repeat(auto-fit, minmax(200px, max-content));
+    }
+
+    h3 {
+      text-align: center;
+      margin-top: 50px;
+    }
+  }
+
+  .Disclaimer {
+    display: flex;
+    align-items: center;
+    margin: 30px 0px 10px;
+    font-size: 12px;
+    justify-content: center;
+
+    svg {
+      margin-right: 5px;
+    }
+  }
+}

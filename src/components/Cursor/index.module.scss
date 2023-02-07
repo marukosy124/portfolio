@@ -1,0 +1,65 @@
+.Light {
+  position: absolute;
+  top: 5%;
+  left: 100px;
+  width: 20px;
+  height: 20px;
+  background-color: $primary-color;
+  border-radius: 50px;
+  animation: lightBlink 3s infinite;
+  pointer-events: none;
+  z-index: 99999;
+}
+
+.LightTail {
+  width: 10px;
+  height: 10px;
+  transition: 0.1s;
+  animation: none;
+  transform: translate(30%, 30%);
+  z-index: 99999;
+}
+
+.LightRipple {
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
+  position: fixed;
+  border-radius: 50%;
+  border: 1px solid $primary-color;
+}
+
+@keyframes lightBlink {
+  0% {
+    box-shadow: 0 0 20px $secondary-color, 0 0 0px $secondary-color,
+      0 0 5px $secondary-color, 0 0 20px $primary-color, 0 0 5px $primary-color,
+      0 0 5px $primary-color;
+  }
+
+  50% {
+    box-shadow: 0 0 3px $secondary-color, 0 0 5px $secondary-color,
+      0 0 10px $secondary-color, 0 0 30px $primary-color,
+      0 0 20px $primary-color, 0 0 60px $primary-color;
+  }
+
+  100% {
+    box-shadow: 0 0 20px $secondary-color, 0 0 0px $secondary-color,
+      0 0 5px $secondary-color, 0 0 20px $primary-color, 0 0 5px $primary-color,
+      0 0 5px $primary-color;
+  }
+}
+
+@keyframes rippleEffect {
+  to {
+    transform: scale(15);
+    opacity: 0.01;
+  }
+}
+
+@media only screen and (max-width: $mobile-breakpoint) {
+  .Light,
+  .LightRipple,
+  .LightTail {
+    display: none;
+  }
+}

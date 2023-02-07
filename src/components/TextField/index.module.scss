@@ -1,0 +1,92 @@
+@import "@/styles/common.module.scss";
+
+.Textfield {
+  width: 100%;
+
+  .container {
+    position: relative;
+
+    &.helper {
+      margin-bottom: 3px;
+    }
+
+    .startIcon {
+      position: absolute;
+      left: 0;
+      bottom: 10px;
+    }
+
+    .endIcon {
+      position: absolute;
+      right: 15px;
+      bottom: 10px;
+      cursor: pointer;
+      &:hover {
+        @include glowFilter;
+      }
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      background-color: transparent;
+      border: none;
+      border-bottom: 1px solid $secondary-color;
+      color: $secondary-color;
+      font-size: 18px;
+      font-family: $font-family;
+      padding: 10px 5px 10px 5px;
+
+      &:focus {
+        outline: none;
+      }
+
+      &.hasStartIcon {
+        padding-left: 30px;
+      }
+
+      &:disabled {
+        background-color: $disabled-color;
+      }
+
+      &::-webkit-input-placeholder {
+        color: #aaa;
+      }
+
+      &:focus::-webkit-input-placeholder {
+        color: $primary-color;
+      }
+
+      &:focus + .underline {
+        transform: scale(1);
+      }
+    }
+
+    .underline {
+      background-color: $primary-color;
+      height: 2px;
+      left: 0px;
+      bottom: 0;
+      position: absolute;
+      -webkit-transform: scale(0, 1);
+      transform: scale(0, 1);
+      -webkit-transition: all 0.5s linear;
+      transition: all 0.5s linear;
+      width: 100%;
+
+      &.error {
+        background-color: $error-color;
+        transform: scale(1);
+      }
+    }
+  }
+
+  .helperText {
+    padding: 5px;
+    font-size: 12px;
+
+    &.error {
+      color: $error-color;
+    }
+  }
+}

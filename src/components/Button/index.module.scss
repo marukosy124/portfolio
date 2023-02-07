@@ -1,0 +1,82 @@
+.Button {
+  appearance: none;
+  background-color: transparent;
+  border-width: 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0;
+  margin: 0;
+  opacity: 1;
+  outline: 0;
+  padding: 15px 20px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-rendering: geometricprecision;
+  transition: opacity 300ms cubic-bezier(0.694, 0, 0.335, 1),
+    background-color 100ms cubic-bezier(0.694, 0, 0.335, 1),
+    color 100ms cubic-bezier(0.694, 0, 0.335, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+  color: $primary-color;
+  border: 1px solid $primary-color;
+
+  svg {
+    margin-right: 5px;
+  }
+
+  &:hover {
+    color: black;
+  }
+
+  &:disabled {
+    background-color: $disabled-color;
+    color: $disabled-dark-color;
+    border-color: $disabled-dark-color;
+    cursor: auto;
+
+    &:hover:before {
+      display: none;
+    }
+  }
+
+  &:before {
+    animation: opacityFallbackOut 0.5s step-end forwards;
+    backface-visibility: hidden;
+    background-color: $primary-color;
+    clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: translateZ(0);
+    transition: clip-path 0.5s cubic-bezier(0.165, 0.54, 0.44, 1),
+      -webkit-clip-path 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    width: 100%;
+  }
+
+  & span {
+    z-index: 1;
+    position: relative;
+  }
+
+  &:hover:before {
+    color: black;
+    animation: opacityFallbackIn 0s step-start forwards;
+    clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+  }
+
+  .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

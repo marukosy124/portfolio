@@ -1,0 +1,21 @@
+$primary-color: #48fff6;
+$primary-light-color: rgba(0, 255, 255, 0.4);
+$secondary-color: white;
+$disabled-color: rgba(170, 170, 170, 0.281);
+$disabled-dark-color: rgba(170, 170, 170, 0.881);
+$error-color: rgb(255, 101, 101);
+$grey: rgba(255, 255, 255, 0.5);
+$font-family: "Lato", sans-serif;
+$mobile-breakpoint: 768px;
+
+:export {
+  primaryColor: $primary-color;
+  primaryLightColor: $primary-light-color;
+  secondaryColor: $secondary-color;
+  disabledColor: $disabled-color;
+  disabledDarkColor: $disabled-dark-color;
+  errorColor: $error-color;
+  grey: $grey;
+  fontFamily: $font-family;
+  mobileBreakpoint: $mobile-breakpoint;
+}

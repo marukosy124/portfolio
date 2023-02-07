@@ -1,0 +1,58 @@
+@import "@styles/common.module.scss";
+
+.NavContainer {
+  display: flex;
+
+  .Navbar {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: capitalize;
+    position: fixed;
+    color: $secondary-color;
+    z-index: 999;
+    transition: all 0.8s;
+    height: auto;
+
+    .topbar {
+      margin: 10px;
+    }
+
+    .MenuItemContainer {
+      display: flex;
+
+      .MenuItem {
+        padding: 12px;
+        font-size: 18px;
+        line-height: 25px;
+        text-align: center;
+        cursor: pointer;
+        &:hover,
+        &.on {
+          @include glowFilter;
+        }
+      }
+    }
+  }
+
+  // desktop
+  @media (max-width: 768px) {
+    .Navbar {
+      display: block;
+      transition: height 0.8s;
+      height: 55px;
+      overflow-y: hidden;
+
+      .topbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+    .MenuItemContainer {
+      overflow-y: hidden;
+      flex-direction: column;
+    }
+  }
+}

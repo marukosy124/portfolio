@@ -1,0 +1,187 @@
+.HomePage {
+  padding-inline: 2rem;
+  animation: fadeIn 2s forwards;
+
+  .container {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+
+    .name {
+      .glitch {
+        color: $secondary-color;
+        position: relative;
+        font-size: 9vw;
+        animation: glitch 5s 5s infinite;
+      }
+
+      .glitch::before {
+        content: attr(data-text);
+        position: absolute;
+        left: -2px;
+        text-shadow: -5px 0 $primary-color;
+        background: black;
+        overflow: hidden;
+        top: 0;
+        animation: noise 5s linear infinite alternate-reverse,
+          glitch 5s 5.05s infinite;
+      }
+
+      .glitch::after {
+        content: attr(data-text);
+        position: absolute;
+        left: 2px;
+        text-shadow: -5px 0 #4d4dff;
+        background: black;
+        overflow: hidden;
+        top: 0;
+        animation: noise2 5s linear infinite alternate-reverse,
+          glitch 5s 5s infinite;
+      }
+
+      .scanlines {
+        overflow: hidden;
+        mix-blend-mode: difference;
+      }
+
+      .scanlines::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: repeating-linear-gradient(
+          to bottom,
+          transparent 0%,
+          rgba(255, 255, 255, 0.05) 0.5%,
+          transparent 1%
+        );
+        animation: fudge 7s ease-in-out alternate infinite;
+      }
+
+      .glow {
+        @extend .glitch;
+        text-shadow: 0 0 1000px $secondary-color;
+        color: transparent;
+        position: absolute;
+        top: 0;
+      }
+    }
+
+    .subtitle {
+      font-weight: 100;
+      font-size: 1.5vw;
+      color: $secondary-color;
+      text-transform: uppercase;
+      letter-spacing: 0.8em;
+      animation: glitch2 5s 5.02s infinite;
+    }
+
+    .ButtonContainer {
+      margin-top: 50px;
+      button {
+        margin-right: 16px;
+        width: 200px;
+      }
+    }
+  }
+}
+
+@keyframes fudge {
+  from {
+    transform: translate(0px, 0px);
+  }
+  to {
+    transform: translate(0px, 2%);
+  }
+}
+
+@keyframes noise {
+  $steps: 30;
+  @for $i from 1 through $steps {
+    #{percentage($i*(1/$steps))} {
+      $top: random(100);
+      $bottom: random(101 - $top);
+      clip-path: inset(#{$top}px 0 #{$bottom}px 0);
+    }
+  }
+}
+
+@keyframes noise2 {
+  $steps: 30;
+  @for $i from 0 through $steps {
+    #{percentage($i*(1/$steps))} {
+      $top: random(100);
+      $bottom: random(101 - $top);
+      clip-path: inset(#{$top}px 0 #{$bottom}px 0);
+    }
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes glitch {
+  1% {
+    transform: rotateX(10deg) skewX(90deg);
+  }
+  2% {
+    transform: rotateX(0deg) skewX(0deg);
+  }
+}
+
+@keyframes glitch2 {
+  1% {
+    transform: rotateX(10deg) skewX(70deg);
+  }
+  2% {
+    transform: rotateX(0deg) skewX(0deg);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .ButtonContainer {
+    flex-direction: column;
+    margin-top: 20px !important;
+    button {
+      padding: 10px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      font-size: 12px;
+      width: 130px !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .HomePage {
+    padding-inline: 0;
+
+    .container {
+      top: 40%;
+    }
+
+    .subtitle {
+      font-size: 2vw;
+      letter-spacing: 0.3em;
+    }
+
+    .ButtonContainer {
+      flex-direction: column;
+      margin-top: 20px;
+      button {
+        padding: 12px;
+        margin-right: 10px;
+        font-size: 12px;
+        width: 150px !important;
+      }
+    }
+  }
+}

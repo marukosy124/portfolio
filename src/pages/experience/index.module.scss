@@ -1,0 +1,149 @@
+@import "@/styles/common.module.scss";
+
+.ExperiencePage {
+  position: relative;
+
+  .container {
+    padding-top: 1rem;
+
+    .time {
+      background: $grey;
+      width: fit-content;
+      padding: 0.5em;
+      font-size: 12px !important;
+    }
+
+    &.work {
+      .item {
+        animation: glow 500ms forwards;
+        background: rgba(42, 50, 113, 0.28);
+        padding: 15px;
+        margin-bottom: 25px;
+      }
+
+      .TimeTypeContainer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        time {
+          font-size: 16px;
+        }
+
+        .type {
+          text-decoration: underline;
+          margin: 0;
+        }
+      }
+
+      ul {
+        padding: 50px 0;
+
+        li {
+          position: relative;
+          list-style-type: none;
+          width: 6px;
+          background-color: $secondary-color;
+          margin: 0 auto;
+          animation: glow 500ms forwards;
+
+          &::before {
+            background: $primary-color;
+            content: "";
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+          }
+
+          .type {
+            margin: 5px 0 10px;
+            text-decoration: underline;
+          }
+
+          time {
+            top: 30px;
+            position: absolute;
+          }
+
+          &:nth-child(odd) time {
+            left: -250px;
+          }
+
+          &:nth-child(even) time {
+            right: -270px;
+          }
+
+          &:nth-child(odd) div {
+            left: 45px;
+            transform: translate3d(200px, 0, 0);
+          }
+
+          &:nth-child(even) div {
+            right: 540px;
+            transform: translate3d(-200px, 0, 0);
+          }
+
+          div {
+            position: relative;
+            width: 500px;
+            padding: 20px;
+            bottom: 0;
+            background: rgba(42, 50, 113, 0.28);
+            visibility: hidden;
+            opacity: 0;
+            transition: all 0.5s ease-in-out;
+
+            h3 {
+              margin-top: 0;
+            }
+
+            &:last-child span {
+              margin-bottom: 0;
+            }
+          }
+
+          &.show div {
+            transform: none;
+            visibility: visible;
+            opacity: 1;
+          }
+        }
+      }
+
+      @media screen and (max-width: 1100px) {
+        ul li div {
+          width: 300px;
+        }
+        ul li:nth-child(even) div {
+          left: -340px;
+        }
+      }
+    }
+  }
+
+  .desc {
+    display: flex;
+    margin: 10px 0;
+
+    .icon {
+      font-size: 20px;
+      margin-top: 3px;
+      margin-right: 5px;
+    }
+  }
+
+  .EduContainer {
+    display: flex;
+    align-items: center;
+  }
+
+  time {
+    font-weight: bold;
+    font-size: 18px;
+    display: block;
+    margin-right: 10px;
+  }
+}

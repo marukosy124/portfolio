@@ -1,0 +1,28 @@
+.ProgressBarContainer {
+  display: flex;
+  align-items: center;
+
+  .ProgressBar {
+    background: rgba(255, 255, 255, 0.338);
+    justify-content: flex-start;
+    border-radius: 100px;
+    align-items: center;
+    position: relative;
+    display: flex;
+    height: 10px;
+    width: 100%;
+
+    .value {
+      box-shadow: 0 10px 40px -10px $primary-color;
+      border-radius: 100px;
+      background: $primary-color;
+      height: 10px;
+      width: 0;
+    }
+  }
+
+  .progress {
+    font-size: 14px;
+    margin-left: 1rem;
+  }
+}

@@ -1,0 +1,17 @@
+.TechChip {
+  border-radius: 100px;
+  font-size: 12px;
+  padding: 5px 10px;
+  color: #000;
+  margin: 5px;
+  width: fit-content;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  img,
+  .FaIcon {
+    margin-right: 5px;
+  }
+}

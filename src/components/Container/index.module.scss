@@ -1,0 +1,9 @@
+.Container {
+  margin-inline: 5rem;
+  margin-top: 50px;
+  padding-top: 1rem;
+
+  @media only screen and (max-width: $mobile-breakpoint) {
+    margin-inline: 2rem;
+  }
+}
