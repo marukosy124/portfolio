@@ -6,9 +6,7 @@ import "@/styles/global.scss"
 import Container from "@/components/Container"
 import Navbar from "@/components/Navbar"
 import dynamic from "next/dynamic"
-import matter from "gray-matter"
-import path from "path"
-import fs from "fs"
+import { GoogleAnalytics } from "nextjs-google-analytics"
 
 const Cursor = dynamic(() => import("../components/Cursor"), { ssr: false })
 
@@ -21,6 +19,7 @@ function App({ Component, pageProps = { title: "index" } }) {
 
   return (
     <>
+      <GoogleAnalytics trackPageViews />
       <Header title={pageProps.title} />
       <Cursor />
       <Navbar />

@@ -37,7 +37,7 @@
   }
 
   // desktop
-  @media (max-width: 768px) {
+  @media (max-width: $mobile-breakpoint) {
     .Navbar {
       display: block;
       transition: height 0.8s;
