@@ -9,11 +9,11 @@ education:
 work:
   - title: Software Engineer
     company: Custonomy Company Limited
-    time: Mar 2022 - Present
+    time: Mar 2022 - Mar 2023
     type: Full-time
     description:
       - Develop and maintain an administrative portal using React TypeScript, Node.js, PostgreSQL and Docker to facilitate efficient internal database management
-      - Develop and maintain Web3 solutions, including an Ethereum provider, a cross-platform Web3 widget and a full-stack decentralized app boilerplate, all of which has since been released to over 10 business partners
+      - Develop and maintain Web3 solutions, including an Ethereum provider, a cross-platform Web3 widget and a full-stack decentralized app boilerplate, all of which has been released to over 10 business partners
       - Refactor and maintain a cross-platform large-scale crypto-asset management desktop app using React TypeScript and Electron
       - Contribute to sprint planning, frontend architecture design and technical documentation
   - title: Frontend Developer
