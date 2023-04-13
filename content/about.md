@@ -1,11 +1,5 @@
 ---
 jobTitle: Software Engineer | Frontend Developer
-introduction: >
-  Hey there! 👋 I'm a software engineer with a passion for frontend development. I'm always looking to challenge myself and learn new things in the software industry. Currently, I'm working at a fintech startup based in Hong Kong, but I'm excited to be continuing my career in Canada this year.
-
-  Building things from scratch is my favorite part of the job - I love the sense of ownership and satisfaction it gives me. Especially when working as a team, it's amazing to see how a group of people with different perspectives and skills can work together to create something wonderful.
-
-  Apart from coding, I'm also a music, movie and fashion lover!
 skills:
   - title: JavaScript
     type: Programming Languages
@@ -99,8 +93,8 @@ skills:
     type: Languages
 ---
 
-Hey there! 👋 I'm a software engineer with a passion for frontend development. I'm always looking to challenge myself and learn new things in the software industry. Currently, I'm working at a fintech startup based in Hong Kong, but I'm excited to be continuing my career in Canada this year.
+Hey there! 👋 I'm a software engineer with a strong passion for frontend development. I've had the opportunity to work with different companies in Hong Kong, honing my skills and expertise in the software industry. Now, I'm excited to bring my experience and knowledge to Canada as I continue my career starting from May. I'm always eager to challenge myself, learn new things, and contribute to cutting-edge projects.
 
-Building things from scratch is my favorite part of the job - I love the sense of ownership and satisfaction it gives me. Especially when working as a team, it's amazing to see how a group of people with different perspectives and skills can work together to create something wonderful.
+I thrive on building things from scratch and enjoy the sense of ownership and satisfaction it brings. Collaborating with diverse teams and leveraging effective communication and a proactive mindset are crucial for project success in my view. I'm excited to contribute my skills and experience to bring innovative solutions to life in any team I join. Let's connect and discuss how I can add value to your organization!
 
 Apart from coding, I'm also a music, movie and fashion lover!
