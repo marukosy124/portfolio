@@ -56,4 +56,5 @@ export enum ETags {
   A_GRADE = "A-Grade",
   APP_DEV = "Mobile App Development",
   SIDE_PROJECT = "Side Project",
+  OPEN_SOURCE_PROJECT = "Open-source Project",
 }

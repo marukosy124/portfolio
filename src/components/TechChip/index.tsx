@@ -5,7 +5,6 @@ import {
   SiTypescript,
   SiSass,
   SiPhp,
-  SiJavascript,
   SiAndroid,
   SiFirebase,
   SiAmazonaws,
@@ -28,6 +27,10 @@ import {
   SiVercel,
   SiSvelte,
   SiVite,
+  SiTailwindcss,
+  SiBulma,
+  SiBootstrap,
+  SiSupabase,
 } from "react-icons/si"
 import { FaJava } from "react-icons/fa"
 import styles from "./index.module.scss"
@@ -136,6 +139,12 @@ const TechChip: React.FC<TechChipProps> = (props) => {
         return <RiVuejsFill className={styles.FaIcon} />
       case "Next.js":
         return <SiNextdotjs className={styles.FaIcon} />
+      case "Tailwind CSS":
+        return <SiTailwindcss className={styles.FaIcon} />
+      case "Bulma":
+        return <SiBulma className={styles.FaIcon} />
+      case "Bootstrap":
+        return <SiBootstrap className={styles.FaIcon} />
       case "Ionic":
         return <SiIonic className={styles.FaIcon} />
       case "jQuery":
@@ -156,6 +165,8 @@ const TechChip: React.FC<TechChipProps> = (props) => {
         return <SiSvelte className={styles.FaIcon} />
       case "Vite":
         return <SiVite className={styles.FaIcon} />
+      case "Supabase":
+        return <SiSupabase className={styles.FaIcon} />
       default:
         if (props.tech.type === ESkillType.LANGUAGE) {
           return <MdOutlineLanguage className={styles.FaIcon} />

@@ -8,27 +8,35 @@ education:
     - Secretary of the 42nd Computer Science Society of The Chinese University of Hong Kong
 work:
   - title: Software Engineer
+    company: BIT App Limited
+    time: Apr 2023 - Present
+    type: Part-time (Remote)
+    description:
+      - Developed and maintained a parenting mobile application using React Native, TypeScript, Node.js, MongoDB and Docker
+      - Revamped and maintained an administrative portal using React, TypeScript, Node.js, MongoDB, Firebase and Docker
+  - title: Software Engineer
     company: Custonomy Company Limited
     time: Mar 2022 - Mar 2023
     type: Full-time
     description:
-      - Developed and maintained an administrative portal using React TypeScript, Node.js, PostgreSQL and Docker to facilitate efficient internal database management
+      - Developed and maintained an administrative portal using React, TypeScript, Node.js, PostgreSQL and Docker to facilitate efficient internal database management
       - Developed and maintained Web3 solutions, including an Ethereum provider, a cross-platform Web3 widget and a full-stack decentralized app boilerplate, all of which has been released to over 10 business partners
-      - Refactored and maintained a cross-platform large-scale crypto-asset management desktop app using React TypeScript and Electron
+      - Refactored and maintained a cross-platform large-scale crypto-asset management desktop app using React, TypeScript and Electron
       - Contributed to sprint planning, frontend architecture design and technical documentation
-  - title: Frontend Developer
+  - title: Software Engineer
     company: BIT App Limited
     time: Nov 2021 - Mar 2022
     type: Part-time
     description:
-      - Worked on an educational quiz web application in React TypeScript
+      - Developed and maintained an educational quiz web application in React, TypeScript
+      - Effectively communicated with the project manager and designer to ensure clear understanding and successful delivery
   - title: Frontend Developer
     company: viAct.ai
     time: Jun 2021 - Oct 2021
     type: Internship
     description:
-      - Revamped and maintained an administrative portal with data analysis using React TypeScript and MobX
-      - Developed a web application using React TypeScript, Flask, MySQL and MongoDB to automate AI model training processes
+      - Revamped and maintained an administrative portal with data analysis using React, TypeScript and MobX
+      - Developed a web application using React, TypeScript, Flask, MySQL and MongoDB to automate AI model training processes
       - Performed unit testing on React projects using Jest and Enzyme for a cycle time reduction in the development process
   - title: Software Developer
     company: Itinni Limited

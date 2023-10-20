@@ -182,4 +182,21 @@ projects:
       - Web Development
       - Mini Project
     createdAt: "2022-11-01"
+
+  - name: Referlah
+    description: An open-source job referral platform catering to Hong Kong expatriates abroad, presently supporting 1500+ active users.
+    github: https://github.com/Pjaijai/Referalah
+    preview: referlah.png
+    demo: https://www.referalah.com/
+    tech:
+      - Next.js
+      - TypeScript
+      - Tailwind CSS
+      - PostgreSQL
+      - Supabase
+    tags:
+      - Web Development
+      - Open-source Project
+      - Side Project
+    createdAt: "2023-10-20"
 ---

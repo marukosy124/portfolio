@@ -31,6 +31,16 @@ skills:
     type: Frontend Development
   - title: Next.js
     type: Frontend Development
+  - title: MUI
+    type: Frontend Development
+  - title: Bulma
+    type: Frontend Development
+  - title: Bootstrap
+    type: Frontend Development
+  - title: NativeBase
+    type: Frontend Development
+  - title: Tailwind CSS
+    type: Frontend Development
   - title: Frontend Architecture & Component Design
     type: Frontend Development
   - title: Node.js
@@ -40,6 +50,8 @@ skills:
   - title: Flask
     type: Backend Development
   - title: Strapi
+    type: Backend Development
+  - title: Supabase
     type: Backend Development
   - title: RESTful API Design
     type: Backend Development
@@ -83,7 +95,7 @@ skills:
     type: Others
   - title: Web Security
     type: Others
-  - title: Unit Testing
+  - title: Software Testing (QA)
     type: Others
   - title: Cantonese
     type: Languages
