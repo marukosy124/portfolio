@@ -183,10 +183,10 @@ projects:
       - Mini Project
     createdAt: "2022-11-01"
 
-  - name: Referlah
+  - name: Referalah
     description: An open-source job referral platform catering to Hong Kong expatriates abroad, presently supporting 1500+ active users.
     github: https://github.com/Pjaijai/Referalah
-    preview: referlah.png
+    preview: referalah.png
     demo: https://www.referalah.com/
     tech:
       - Next.js
