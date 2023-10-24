@@ -46,12 +46,18 @@
     "glslify": "^7.1.1",
     "glslify-loader": "^2.0.0",
     "next-compose-plugins": "^2.2.1",
-    "postcss": "^8.4.12",
+    "postcss": "^8.4.31",
     "prettier": "^2.6.2",
     "raw-loader": "^4.0.2",
     "sass": "^1.52.3",
     "typescript": "^4.7.2",
     "url-loader": "^4.1.1"
+  },
+    "overrides": {
+    "semver": "^7.5.3",
+    "word-wrap": "^1.2.4",
+    "json5": "^2.2.2",
+    "@babel/traverse": "^7.23.2"
   },
   "scripts": {
     "lint": "yarn prettier && yarn eslint",
