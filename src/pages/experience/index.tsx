@@ -18,7 +18,7 @@ interface ExperienceProps {
   work: IExperience[]
 }
 
-const Experience = ({ education, work }) => {
+const Experience = ({ education, work }: ExperienceProps) => {
   const { isMobile } = useDeviceDetect()
 
   const callbackFunc = useCallback((items: NodeListOf<HTMLLIElement>) => {
@@ -85,6 +85,7 @@ const Experience = ({ education, work }) => {
                     <time>{exp.time}</time>
                   </div>
                   <h3>{exp.title}</h3>
+                  <h5>{exp.company}</h5>
                   {exp.description.map((desc: string, i: number) => (
                     <span className={styles.desc} key={i}>
                       <span>
@@ -107,6 +108,7 @@ const Experience = ({ education, work }) => {
                     <time>{exp.time}</time>
                     <p className={styles.type}>{exp.type}</p>
                     <h3>{exp.title}</h3>
+                    <h5>{exp.company}</h5>
                     {exp.description.map((desc, i) => (
                       <span className={styles.desc} key={i}>
                         <span>

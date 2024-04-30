@@ -40,6 +40,7 @@ export interface IEducation {
 export interface IExperience {
   time: string
   title: string
+  company: string
   type: EJobType
   description: string[]
 }
