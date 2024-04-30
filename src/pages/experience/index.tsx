@@ -85,7 +85,9 @@ const Experience = ({ education, work }: ExperienceProps) => {
                     <time>{exp.time}</time>
                   </div>
                   <h3>{exp.title}</h3>
-                  <h5>{exp.company}</h5>
+                  <h5>
+                    {exp.company} - {exp.location}
+                  </h5>
                   {exp.description.map((desc: string, i: number) => (
                     <span className={styles.desc} key={i}>
                       <span>
@@ -108,7 +110,9 @@ const Experience = ({ education, work }: ExperienceProps) => {
                     <time>{exp.time}</time>
                     <p className={styles.type}>{exp.type}</p>
                     <h3>{exp.title}</h3>
-                    <h5>{exp.company}</h5>
+                    <h5>
+                      {exp.company} - {exp.location}
+                    </h5>
                     {exp.description.map((desc, i) => (
                       <span className={styles.desc} key={i}>
                         <span>

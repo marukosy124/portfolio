@@ -9,6 +9,7 @@ education:
 work:
   - title: Frontend Engineer
     company: FoloTech Inc.
+    location: Toronto, ON Canada
     time: Jan 2024 - Present
     type: Full-time
     description:
@@ -18,13 +19,15 @@ work:
       - Partnered with external quality assurance teams to uphold rigorous standards for data quality and AI performance
   - title: Software Engineer
     company: BIT App Limited
+    location: (Remote)
     time: Apr 2023 - Feb 2024
-    type: Part-time (Remote)
+    type: Part-time
     description:
       - Developed and maintained a parenting mobile application using React Native, TypeScript, Node.js, MongoDB and Docker
       - Revamped and maintained an administrative portal using React, TypeScript, Node.js, MongoDB, Firebase and Docker
   - title: Software Engineer
     company: Custonomy Company Limited
+    location: Hong Kong
     time: Mar 2022 - Mar 2023
     type: Full-time
     description:
@@ -34,6 +37,7 @@ work:
       - Contributed to sprint planning, frontend architecture design and technical documentation
   - title: Software Engineer
     company: BIT App Limited
+    location: Hong Kong
     time: Nov 2021 - Mar 2022
     type: Part-time
     description:
@@ -41,6 +45,7 @@ work:
       - Effectively communicated with the project manager and designer to ensure clear understanding and successful delivery
   - title: Frontend Developer
     company: viAct.ai
+    location: Hong Kong
     time: Jun 2021 - Oct 2021
     type: Internship
     description:
@@ -49,6 +54,7 @@ work:
       - Performed unit testing on React projects using Jest and Enzyme for a cycle time reduction in the development process
   - title: Software Developer
     company: Itinni Limited
+    location: Hong Kong
     time: Apr 2020 – Sep 2020
     type: Internship
     description:

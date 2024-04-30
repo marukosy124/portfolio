@@ -41,6 +41,7 @@ export interface IExperience {
   time: string
   title: string
   company: string
+  location: string
   type: EJobType
   description: string[]
 }
