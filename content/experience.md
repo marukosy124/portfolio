@@ -7,9 +7,18 @@ education:
     - Second Class Upper Division (Major GPA 3.5/4.0)
     - Secretary of the 42nd Computer Science Society of The Chinese University of Hong Kong
 work:
+  - title: Frontend Engineer
+    company: FoloTech Inc.
+    time: Jan 2024 - Present
+    type: Full-time
+    description:
+      - Developed and designed an interactive, AI-powered English learning mobile game for children using React Native and OpenAI
+      - Engineered Python automation scripts to streamline AI generation tasks and optimize data management
+      - Created UI/UX prototypes using Figma and collaborated with designers to ensure a high-quality user experience
+      - Partnered with external quality assurance teams to uphold rigorous standards for data quality and AI performance
   - title: Software Engineer
     company: BIT App Limited
-    time: Apr 2023 - Present
+    time: Apr 2023 - Feb 2024
     type: Part-time (Remote)
     description:
       - Developed and maintained a parenting mobile application using React Native, TypeScript, Node.js, MongoDB and Docker
